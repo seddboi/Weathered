@@ -18,13 +18,18 @@ function Overview() {
                         </div>
 
                         <div class="m-3">
-                            <label for="exampleFormControlInput1" class="form-label">Search A New City</label>
+                            <label for="search-bar" class="form-label">Search A New City</label>
                             <input class="form-control" id="search-bar" placeholder="Las Vegas, etc." />
                         </div>
                     </section>
 
                     <section class='flex-grow-1' id='forecast'>
-                        <h3 class='m-3'>Hourly Forecast for <span id='hourly-date'></span></h3>
+                        <h4 class='m-3'>Hourly Forecast</h4>
+                        <h3 id='hourly-date'>(insert date here)</h3>
+
+                        <div id='hourly-forecast'>
+
+                        </div>
                     </section>
                 </div>
             </div>
