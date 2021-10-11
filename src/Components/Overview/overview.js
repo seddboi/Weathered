@@ -4,13 +4,13 @@ import './overview.css';
 function Overview() {
     return (
         <div>
-            <div class='jumbotron container' id='heading-title'>
+            <div class='jumbotron' id='heading-title'>
                 <h1>Welcome to <strong>Weathered</strong>!</h1>
                 <h3>A Simple React-Based Weather Dashboard </h3>
             </div>
 
-            <div class='container' id='homepage-skeleton'>
-                <div class='d-flex'>
+            <div class='container-fluid' id='homepage-skeleton'>
+                <div class='d-flex' id='center-page'>
                     <section class='' id='search-bar-recents'>
                         <h3 class='m-3'>Recents</h3>
                         <div id='insert-recent-buttons'>

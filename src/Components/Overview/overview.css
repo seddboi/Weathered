@@ -10,10 +10,13 @@
     color: var(--white);
     background: var(--black);
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 20px;
     box-shadow: 0px 0px 15px var(--darkblue), 0px 0px 17px var(--darkblue);
+}
+
+#center-page {
+    margin: 9px;
 }
 
 #search-bar-recents {
@@ -28,4 +31,16 @@
     color: var(--white);
     background: var(--mediumblue);
     text-align: center;
+}
+
+@media only screen and (max-width: 610px) {
+    #center-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #search-bar-recents {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }
