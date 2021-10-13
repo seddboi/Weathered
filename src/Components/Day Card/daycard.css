@@ -1,0 +1,15 @@
+.card {
+    width: 18rem;
+}
+
+#plug-in-date {
+    color: var(--black);
+}
+
+#weather-text {
+    color: var(--black);
+}
+
+.card-text {
+    color: var(--black);
+}
