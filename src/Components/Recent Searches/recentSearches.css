@@ -1,0 +1,24 @@
+#search-bar-recents {
+    color: var(--white);
+    background: var(--lightblue);
+    text-align: center;
+    min-width: 220px;
+    margin-right: 20px;
+}
+
+#search-bar {
+    margin: 0 auto;
+}
+
+#search-button {
+    width: 100%;
+    margin: 10px auto;
+}
+
+
+@media only screen and (max-width: 610px) {
+    #search-bar-recents {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

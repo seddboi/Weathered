@@ -19,28 +19,9 @@
     margin: 9px;
 }
 
-#search-bar-recents {
-    color: var(--white);
-    background: var(--lightblue);
-    text-align: center;
-    min-width: 220px;
-    margin-right: 20px;
-}
-
-#forecast {
-    color: var(--white);
-    background: var(--mediumblue);
-    text-align: center;
-}
-
 @media only screen and (max-width: 610px) {
     #center-page {
         display: flex;
         flex-direction: column;
-    }
-
-    #search-bar-recents {
-        margin-right: 0px;
-        margin-bottom: 20px;
     }
 }

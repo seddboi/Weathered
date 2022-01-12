@@ -4,8 +4,8 @@ import './daycard.css';
 function Daycard() {
     return (
         <div class='card'>
-            <div class="card-header">
-                <h3><span id='plug-in-date'>Insert Date Here</span></h3>
+            <div id='card-header' class="card-header">
+                <h4 id='plug-in-date'>Insert Date Here</h4>
             </div>
 
             {/* <ul class='list-group list-group-flush'>
@@ -20,7 +20,7 @@ function Daycard() {
             </ul> */}
 
             <div class="card-body">
-                <h4 id='weather-text'>Description</h4>
+                <h5 id='weather-text'>Description</h5>
                 <img id='weather-icon' src='https://cdn.weatherapi.com/weather/64x64/day/113.png'></img>
                 <h5 class="card-text">Max Temp: <span id='max-temp'></span></h5>
                 <h5 class="card-text">Min Temp: <span id='min-temp'></span></h5>

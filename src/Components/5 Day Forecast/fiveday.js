@@ -3,12 +3,12 @@ import './fiveday.css';
 
 import Daycard from '../Day Card/daycard';
 
-function Fiveday() {
+export function Fiveday() {
     return (
         <div class='jumbotron' id='five-day-section'>
-            <h3 class=''>5 Day Forecast</h3>
+            <h3 class='three-day-title'>3 Day Forecast</h3>
 
-            <div class='container-fluid' id='5-day-forecast'>
+            <div class='container-fluid' id='five-day-forecast'>
                 <Daycard />
                 <Daycard />
                 <Daycard />
@@ -16,5 +16,3 @@ function Fiveday() {
         </div>
     )
 };
-
-export default Fiveday;

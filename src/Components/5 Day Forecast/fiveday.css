@@ -4,3 +4,14 @@
     margin: 20px;
     text-align: center;
 }
+
+#five-day-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.three-day-title {
+    text-shadow: 1px 1px #666, 2px 2px #666, 3px 3px #666, 4px 4px #666;
+}

@@ -1,5 +1,14 @@
 .card {
     width: 18rem;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#card-header {
+    background: var(--lightblue);
 }
 
 #plug-in-date {

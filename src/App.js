@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import Overview from './Components/Overview/overview.js';
-import Fiveday from './Components/5 Day Forecast/fiveday';
+import {Overview} from './Components/Overview/overview.js';
 
 function App() {
   return (
     <div>
       <Overview />
-      <Fiveday />
     </div>
   );
 }
