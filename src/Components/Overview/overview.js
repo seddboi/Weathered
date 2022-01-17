@@ -2,14 +2,14 @@ import React from 'react';
 import './overview.css';
 
 
-import useForecast from '../../hooks/useForecast';
+import {useForecast} from '../../hooks/useForecast';
 import { RecentSearches } from '../Recent Searches/recentSearches';
 import { Hourly } from '../Hourly/hourly';
 import { Fiveday } from '../5 Day Forecast/fiveday';
 
 export function Overview() {
     
-    const {error, loading, forecast} = useForecast();
+    // const {forecast} = useForecast();
 
     return (
         <div>
@@ -22,11 +22,11 @@ export function Overview() {
                 <div class='d-flex' id='center-page'>
                     <RecentSearches />
         
-                    {error ? <p>Something went wrong here... :(</p> : <Hourly />}
+                    <Hourly />
                 </div>
             </div>
 
-            {error ? <p>Something went wrong here... :(</p> : <Fiveday />}        
+            <Fiveday />        
         </div>
     )
 };
