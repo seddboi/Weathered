@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './recentSearches.css';
 
-export function RecentSearches() {
+export function RecentSearches({getSearch}) {
     const [city, setCity] = useState('');
     const [recents, setRecents] = useState([]);
 
@@ -12,6 +12,7 @@ export function RecentSearches() {
             return;
         } else {
             addRecent(city);
+            getSearch(city);
         }  
     }
  
@@ -31,10 +32,8 @@ export function RecentSearches() {
     }; 
 
     const searchAgain = (e) => {
-        // console.log(e.target.innerHTML);
         const recent = e.target.innerHTML;
         setCity(recent);
-        console.log(city);
     }
     
     return (
