@@ -42,7 +42,7 @@ export function RecentSearches({getSearch}) {
             <div id='insert-recent-buttons'>{recents.map((entry, index) => <h5 key={index} onClick={searchAgain} value={entry}>{entry}</h5>)}</div>
 
             <form onSubmit={onSubmit} className="m-3">
-                <label className="form-label" for="search-bar">Search A City</label><br/>
+                <label className="form-label" htmlFor="search-bar">Search A City</label><br/>
                 <input className='form-text' id="search-bar" type='text' value={city} placeholder="Las Vegas, etc." onChange={onChange}/>
                 <input className='form-button' id='search-button' type='submit' value='Search'/>
             </form>
