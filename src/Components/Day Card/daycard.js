@@ -21,7 +21,7 @@ function Daycard() {
 
             <div className="card-body">
                 <h5 id='weather-text'>Description</h5>
-                <img id='weather-icon' src='https://cdn.weatherapi.com/weather/64x64/day/113.png'></img>
+                <img id='weather-icon' src='https://cdn.weatherapi.com/weather/64x64/day/113.png' alt='wicon'></img>
                 <h5 className="card-text">Max Temp: <span id='max-temp'></span></h5>
                 <h5 className="card-text">Min Temp: <span id='min-temp'></span></h5>
                 <h5 className="card-text">Average Temp: <span id='avg-temp'></span></h5>
