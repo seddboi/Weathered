@@ -6,9 +6,9 @@ import Daycard from '../Day Card/daycard';
 export function Fiveday() {
     return (
         <div class='jumbotron' id='five-day-section'>
-            <h3 class='three-day-title'>3 Day Forecast</h3>
+            <h3 className='three-day-title'>3 Day Forecast</h3>
 
-            <div class='container-fluid' id='five-day-forecast'>
+            <div className='container-fluid' id='five-day-forecast'>
                 <Daycard />
                 <Daycard />
                 <Daycard />

@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const fetchForecast = async (city) => {
 
-    const api_key = process.env.API_KEY;
+    const api_key = process.env.APIKEY;
     // const api_key = '2220f5a5d83243938f764759211310';
     var BASE_URL = `http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=3&aqi=no&alerts=no`;
 
@@ -55,13 +55,13 @@ const fetchForecast = async (city) => {
     };
 
     // this updates the state with the forecast for the city entered
-    data = {
+    const newData = {
         currentTempInfo: currentTempInfo,
         daycardInfo: daycardInfo
     };
 
     // this spits out the newly created forecast object
-    return data;
+    return newData;
 };
 
 export function Overview() {
@@ -70,19 +70,18 @@ export function Overview() {
     // 
     const getSearch = async (searchedCity) => {
         setSearch(searchedCity);
-        const forecast = await fetchForecast(searchedCity);
         return await fetchForecast(search);
     };
 
     return (
         <div>
-            <div class='jumbotron' id='heading-title'>
+            <div className='jumbotron' id='heading-title'>
                 <h1>Welcome to <strong>Weathered</strong>!</h1>
                 <h3>A Simple Weather Dashboard </h3>
             </div>
 
-            <div class='container-fluid' id='homepage-skeleton'>
-                <div class='d-flex' id='center-page'>
+            <div className='container-fluid' id='homepage-skeleton'>
+                <div className='d-flex' id='center-page'>
                     <RecentSearches getSearch={getSearch}/>
         
                     <Hourly />

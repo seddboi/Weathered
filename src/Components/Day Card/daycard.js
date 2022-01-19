@@ -3,8 +3,8 @@ import './daycard.css';
 
 function Daycard() {
     return (
-        <div class='card'>
-            <div id='card-header' class="card-header">
+        <div className='card'>
+            <div id='card-header' className="card-header">
                 <h4 id='plug-in-date'>Insert Date Here</h4>
             </div>
 
@@ -19,13 +19,13 @@ function Daycard() {
                 <li class='list-group-item'>Chance Of Rain: <span id='chance-rain'></span></li>
             </ul> */}
 
-            <div class="card-body">
+            <div className="card-body">
                 <h5 id='weather-text'>Description</h5>
                 <img id='weather-icon' src='https://cdn.weatherapi.com/weather/64x64/day/113.png'></img>
-                <h5 class="card-text">Max Temp: <span id='max-temp'></span></h5>
-                <h5 class="card-text">Min Temp: <span id='min-temp'></span></h5>
-                <h5 class="card-text">Average Temp: <span id='avg-temp'></span></h5>
-                <h5 class="card-text">Chance Of Rain: <span id='chance-rain'></span></h5>
+                <h5 className="card-text">Max Temp: <span id='max-temp'></span></h5>
+                <h5 className="card-text">Min Temp: <span id='min-temp'></span></h5>
+                <h5 className="card-text">Average Temp: <span id='avg-temp'></span></h5>
+                <h5 className="card-text">Chance Of Rain: <span id='chance-rain'></span></h5>
             </div>
         </div>
     )
