@@ -1,7 +1,14 @@
 import React from 'react';
 import './hourly.css';
 
-export function Hourly() {
+export function Hourly({forecast}) {
+
+    if (forecast === null) {
+        return <section>
+            <h4 id='blank-search'>Search Something!</h4>
+        </section>
+    }
+
     return (
         <section className='flex-grow-1' id='forecast'>
             <h4 className='m-3'>Hourly Forecast</h4>
