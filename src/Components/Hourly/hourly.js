@@ -9,12 +9,6 @@ export function Hourly({forecast}) {
         </section>
     };
 
-    // // prints out number date
-    // function epochToDate(num) {
-    //     var epoch = new Date(forecast.location.localtime_epoch * 1000);
-    //     return epoch.toLocaleDateString();
-    // };
-
     // converts epoch to spelled out date
     function epochToDateString(num) {
         const epoch = new Date(forecast.location.localtime_epoch * 1000);
