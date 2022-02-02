@@ -12,7 +12,7 @@
 #wicon {
     background: var(--white);
     border: 4px solid var(--darkblue);
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .font-color {
@@ -22,7 +22,7 @@
 
 .hourly-forecast {
     display: inline-flex;
-    width: 40vw;
+    max-width: 40vw;
     overflow-x: auto;
     white-space: nowrap;
     border: 4px solid var(--darkblue);
