@@ -13,5 +13,8 @@
 }
 
 .three-day-title {
-    text-shadow: 1px 1px #666, 2px 2px #666, 3px 3px #666, 4px 4px #666;
+    padding: 10px;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
 }
