@@ -24,13 +24,11 @@ app.get('/forecast', (req, res) => {
         url: `http://api.weatherapi.com/v1/forecast.json?`,
         params: {
             q: req.query.city,
+            key : process.env.REACT_APP_API_KEY,
+            days: '3',
+            api: 'no',
+            alerts: 'no',
         }, 
-        headers: {
-            'key' : process.env.REACT_APP_API_KEY,
-            'days': '3',
-            'api': 'no',
-            'alerts': 'no'
-        }
     };
 
     axios.request(options).then((response) => {
