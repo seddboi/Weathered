@@ -31,7 +31,9 @@
 
 .hours {
     border-right: 2px solid var(--mediumblue);
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: var(--mediumblue);
     background: var(--white);
     width: 80px;
@@ -40,4 +42,10 @@
 
 .hours:last-child {
     border-right: 0;
+}
+
+@media only screen and (max-width: 610px) {
+    .hourly-forecast {
+        max-width: 60vw;
+    }
 }
