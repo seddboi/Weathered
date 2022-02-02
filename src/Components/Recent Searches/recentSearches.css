@@ -1,25 +1,101 @@
-#search-bar-recents {
+.before-search-bar-recents {
     color: var(--white);
     background: var(--lightblue);
     text-align: center;
-    min-width: 220px;
+    width: 100%;
+}
+
+.after-search-bar-recents {
+    display: inline-flex;
+    flex-direction: column;
+    color: var(--white);
+    background: var(--lightblue);
+    text-align: center;
+    max-width: 220px;
     margin-right: 20px;
 }
 
-#search-bar {
-    width: 100%;
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#insert-recent-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 0 auto;
 }
 
+.entry {
+    background: var(--offwhiteblue);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+    width: 120px;
+    height: auto;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.entry:hover {
+    background: var(--mediumblue);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+    width: 120px;
+    height: auto;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-label {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-text {
+    width: 10rem;
+    margin: 0 auto;
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+}
+
 #search-button {
-    width: 100%;
-    margin: 10px auto;
+    width: 10rem;
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+    color: var(--darkblue);
 }
 
 
 @media only screen and (max-width: 610px) {
-    #search-bar-recents {
-        margin-right: 0px;
+    .after-search-bar-recents {
+        max-width: 100%;
+        margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .form-text {
+        width: 15rem;
+        border: 2px solid var(--darkblue);
+        border-radius: 8px;
+    }
+
+    #search-button {
+        width: 15rem;
+        border: 2px solid var(--darkblue);
+        border-radius: 8px;
+        color: var(--darkblue);
     }
 }

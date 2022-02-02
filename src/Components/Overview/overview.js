@@ -31,23 +31,41 @@ export function Overview() {
         
     };
 
-    return (
-        <div>
-            <div className='jumbotron' id='heading-title'>
-                <h1>Welcome to <strong>Weathered</strong>!</h1>
-                <h3>A Simple Weather Dashboard </h3>
-            </div>
-
-            <div className='container-fluid' id='homepage-skeleton'>
-                <div className='d-flex' id='center-page'>
-                    <RecentSearches getSearch={getSearch}/>
-        
-                    <Hourly forecast={forecast}/>
+    if (forecast === null) {
+        return(
+            <div>
+                <div className='jumbotron' id='heading-title'>
+                    <h1>Welcome to <strong>Weathered</strong>!</h1>
+                    <h3>A Simple Weather Dashboard </h3>
                 </div>
-            </div>
 
-            <Fiveday forecast={forecast}/>        
+                <div className='container-fluid' >
+                    <div id='center-page'>
+                        <RecentSearches getSearch={getSearch}/>
+                
+                    </div>
+                </div>
         </div>
-    )
+        )
+    } else {
+        return (
+            <div>
+                <div className='jumbotron' id='heading-title'>
+                    <h1>Welcome to <strong>Weathered</strong>!</h1>
+                    <h3>A Simple Weather Dashboard </h3>
+                </div>
+    
+                <div className='container-fluid' id='homepage-skeleton'>
+                    <div className='d-flex' id='center-page'>
+                        <RecentSearches getSearch={getSearch}/>
+    
+                        <Hourly forecast={forecast}/>
+                    </div>
+                </div>
+    
+                <Fiveday forecast={forecast}/>        
+            </div>
+        )
+    }
 };
 

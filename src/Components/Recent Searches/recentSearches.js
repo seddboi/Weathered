@@ -34,15 +34,28 @@ export function RecentSearches({getSearch}) {
     const searchAgain = (e) => {
         const recent = e.target.innerHTML;
         setCity(recent);
+        onSubmit(e);
     }
+
+    if (recents.length === 0 ) {
+        return (
+            <section className='before-search-bar-recents' >
+                <form onSubmit={onSubmit} >
+                    <label className="form-label" htmlFor="search-bar">Search A City</label><br/>
+                    <input className='form-text' id="search-bar" type='text' value={city} placeholder="Las Vegas, etc." onChange={onChange}/>
+                    <input className='form-button' id='search-button' type='submit' value='Search'/>
+                </form>
+        </section>
+        )
+    }  
     
     return (
-        <section id='search-bar-recents'>
-            <h3 className='m-3'>Recents </h3>
-            <div id='insert-recent-buttons' onSubmit={onSubmit}>{recents.map((entry, index) => <h5 key={index} onClick={searchAgain} value={entry}>{entry}</h5>)}</div>
+        <section className='after-search-bar-recents' >
+            <h3 className='title'>Recents</h3>
+            <div id='insert-recent-buttons' >{recents.map((entry, index) => <button className='entry' key={index} onClick={searchAgain} value={entry}>{entry}</button>)}</div>
 
-            <form onSubmit={onSubmit} className="m-3">
-                <label className="form-label" htmlFor="search-bar">Search A City</label><br/>
+            <form className='form'onSubmit={onSubmit} >
+                <label className="form-label" htmlFor="search-bar">Search A City</label>
                 <input className='form-text' id="search-bar" type='text' value={city} placeholder="Las Vegas, etc." onChange={onChange}/>
                 <input className='form-button' id='search-button' type='submit' value='Search'/>
             </form>

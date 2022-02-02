@@ -80,7 +80,7 @@ export function Hourly({forecast}) {
         <section className='flex-grow-1' id='forecast'>
             <h1 className='m-3'><strong id='city-title' className='font-color'>{`${forecast.location.name}, ${forecast.location.region}`}</strong> <img alt={forecast.current.condition.text} id='wicon' src={forecast.current.condition.icon}></img></h1>
             <h3 id='hourly-date'>Today is <strong className='font-color'>{epochToDateString(forecast.location.localtime_epoch)}</strong>.</h3>
-            <h4>It's currently <strong className='font-color'>{forecast.current.temp_f}°F</strong> and <strong>{forecast.current.condition.text}</strong>.</h4>
+            <h4>It's currently <strong className='font-color'>{forecast.current.temp_f}°F</strong> and <strong className='font-color'>{forecast.current.condition.text}</strong>.</h4>
             <h4>It feels like <strong className='font-color'>{forecast.current.feelslike_f}°F</strong>.</h4>
             <h4>There is a current high temperature of <strong className='font-color'>{forecast.forecast.forecastday[0].day.maxtemp_f}°F</strong>,</h4>
             <h4>And there is a current low temperature of <strong className='font-color'>{forecast.forecast.forecastday[0].day.mintemp_f}°F</strong>.</h4>
