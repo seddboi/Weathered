@@ -16,12 +16,12 @@
     box-shadow: 0px 0px 15px var(--darkblue), 0px 0px 17px var(--darkblue);
 }
 
-#center-page {
-    margin: 9px;
-}
-
 #container-fluid {
     width: 100%;
+}
+
+#center-page {
+    margin: 9px;
 }
 
 @media only screen and (max-width: 610px) {

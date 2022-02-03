@@ -1,5 +1,6 @@
 import React from 'react';
 import './hourly.css';
+import 'animate.css';
 
 export function Hourly({forecast}) {
 
@@ -77,7 +78,7 @@ export function Hourly({forecast}) {
     const hourlyFC = gatherHourlyFC();
 
     return (
-        <section className='flex-grow-1' id='forecast'>
+        <section className='flex-grow-1 animate__animated animate__fadeIn' id='forecast'>
             <h1 className='m-3'><strong id='city-title' className='font-color'>{`${forecast.location.name}, ${forecast.location.region}`}</strong> <img alt={forecast.current.condition.text} id='wicon' src={forecast.current.condition.icon}></img></h1>
             <h3 id='hourly-date'>Today is <strong className='font-color'>{epochToDateString(forecast.location.localtime_epoch)}</strong>.</h3>
             <h4>It's currently <strong className='font-color'>{forecast.current.temp_f}°F</strong> and <strong className='font-color'>{forecast.current.condition.text}</strong>.</h4>

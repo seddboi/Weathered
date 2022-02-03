@@ -44,6 +44,10 @@
     border-right: 0;
 }
 
+.flex-grow-1 {
+    animation-delay: 1s;
+}
+
 @media only screen and (max-width: 610px) {
     .hourly-forecast {
         max-width: 60vw;

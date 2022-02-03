@@ -1,5 +1,6 @@
 import React from 'react';
 import './fiveday.css';
+import 'animate.css';
 
 import {Daycard} from '../Day Card/daycard';
 
@@ -28,7 +29,7 @@ export function Fiveday({forecast}) {
     }
 
     return (
-        <div className='jumbotron' id='five-day-section'>
+        <div className='jumbotron animate__animated animate__fadeIn' id='five-day-section'>
             <h3 className='three-day-title'>Next Couple of Days</h3>
 
             <div className='container-fluid' id='five-day-forecast'>

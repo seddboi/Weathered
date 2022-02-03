@@ -3,6 +3,7 @@ import './overview.css';
 import { RecentSearches } from '../Recent Searches/recentSearches';
 import { Hourly } from '../Hourly/hourly';
 import { Fiveday } from '../5 Day Forecast/fiveday';
+import 'animate.css';
 
 const axios = require('axios'); 
 require('dotenv').config();
@@ -29,43 +30,25 @@ export function Overview() {
             console.log(error);
         })
         
-    };
-
-    if (forecast === null) {
-        return(
-            <div>
-                <div className='jumbotron' id='heading-title'>
-                    <h1>Welcome to <strong>Weathered</strong>!</h1>
-                    <h3>A Simple Weather Dashboard </h3>
-                </div>
-
-                <div className='container-fluid' >
-                    <div id='center-page'>
-                        <RecentSearches getSearch={getSearch}/>
-                
-                    </div>
-                </div>
-        </div>
-        )
-    } else {
-        return (
-            <div>
-                <div className='jumbotron' id='heading-title'>
-                    <h1>Welcome to <strong>Weathered</strong>!</h1>
-                    <h3>A Simple Weather Dashboard </h3>
-                </div>
+    };  
     
-                <div className='container-fluid' id='homepage-skeleton'>
-                    <div className='d-flex' id='center-page'>
-                        <RecentSearches getSearch={getSearch}/>
-    
-                        <Hourly forecast={forecast}/>
-                    </div>
-                </div>
-    
-                <Fiveday forecast={forecast}/>        
+    return (
+        <div>
+            <div className='jumbotron' id='heading-title'>
+                <h1>Welcome to <strong>Weathered</strong>!</h1>
+                <h3>A Simple Weather Dashboard </h3>
             </div>
-        )
-    }
+
+            <div className='container-fluid' id='homepage-skeleton'>
+                <div className='d-flex' id='center-page'>
+                    <RecentSearches getSearch={getSearch}/>
+
+                    <Hourly forecast={forecast}/>
+                </div>
+            </div>
+
+            <Fiveday forecast={forecast}/>        
+        </div>
+    )
 };
 
