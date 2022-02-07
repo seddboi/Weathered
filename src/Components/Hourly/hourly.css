@@ -45,7 +45,7 @@
 }
 
 .flex-grow-1 {
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 @media only screen and (max-width: 610px) {
