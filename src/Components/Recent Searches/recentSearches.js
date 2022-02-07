@@ -55,7 +55,7 @@ export function RecentSearches({getSearch}) {
     return (
         <section className='after-search-bar-recents'>
             <h3 className='title'>Recents</h3>
-            <div id='insert-recent-buttons' >{recents.map((entry, index) => <button className='entry' key={index} onClick={searchAgain} value={entry}>{entry}</button>)}</div>
+            <div id='insert-recent-buttons' >{recents.map((entry, index) => <button className='entry' key={index} onClick={searchAgain} >{entry}</button>)}</div>
 
             <form className='form'onSubmit={onSubmit} >
                 <label className="form-label" htmlFor="search-bar">Search A City</label>
