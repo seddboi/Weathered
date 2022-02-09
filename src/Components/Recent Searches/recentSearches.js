@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './recentSearches.css';
+import 'animate.css';
 // import $ from 'jquery';
 
 export function RecentSearches({getSearch}) {
@@ -53,7 +54,7 @@ export function RecentSearches({getSearch}) {
     }  
     
     return (
-        <section className='after-search-bar-recents'>
+        <section className='after-search-bar-recents animate__animated animate__fadeInLeft'>
             <h3 className='title'>Recents</h3>
             <div id='insert-recent-buttons' >{recents.map((entry, index) => <button className='entry' key={index} onClick={searchAgain} >{entry}</button>)}</div>
 
