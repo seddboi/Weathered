@@ -2,8 +2,9 @@ import React from 'react';
 import './daycard.css';
 
 export function Daycard({data}) {
-    const unixTime = new Date(data.date * 1000);
-    const convertedDate = unixTime.toLocaleDateString("en-US");
+    const myDate = new Date(data.date * 1000);
+    const convertedDate = myDate.toLocaleDateString("en-US", {timeZone: 'UTC'});
+    
     return (
         <div className='mini-card'>
             <h4 id='plug-in-date'>{convertedDate}</h4>

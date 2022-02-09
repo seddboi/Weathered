@@ -57,7 +57,7 @@ export function Hourly({forecast}) {
             21: '9:00 PM', 
             22: '10:00 PM',
             23: '11:00 PM',
-            24: '12:00 PM'
+            24: '12:00 AM'
         };
 
         // this grabs the current hour, adjusts it for the proceeding hourly forecast, then creates the new array, updatedTimes, of string titles
