@@ -20,7 +20,7 @@ export function Overview() {
 
         const options = {
             method: 'GET',
-            url: 'http://localhost:8000/forecast',
+            url: 'http://localhost:3001/forecast',
             params: {city: searchedCity}
         };
 
