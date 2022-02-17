@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, 'build')))
+app.use(express.static(path.resolve(__dirname, './client/build')))
 
 app.get('/', (req, res) => {
     res.json('hi');
