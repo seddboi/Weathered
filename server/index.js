@@ -1,4 +1,4 @@
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const path = require('path');
 const express = require('express');
 const cors = require('cors');
@@ -21,7 +21,7 @@ app.get('/forecast', (req, res) => {
         url: `http://api.weatherapi.com/v1/forecast.json?`,
         params: {
             q: req.query.city,
-            key : PORT,
+            key : process.env.REACT_APP_API_KEY,
             days: '3',
             api: 'no',
             alerts: 'no',
@@ -35,5 +35,5 @@ app.get('/forecast', (req, res) => {
     });
 });
 
-app.listen(PORT, () => console.log(`Server running on PORT ${PORT} `))
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT} `))
  
