@@ -4,8 +4,11 @@
   "description": "react express server",
   "main": "index.js",
   "scripts": {
+    "client-install": "cd .. && cd client && npm install",
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "cd .. && cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Gian Z",
   "license": "MIT",
