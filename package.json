@@ -4,7 +4,7 @@
   "description": "react express server",
   "main": "index.js",
   "scripts": {
-    "client-install": "cd .. && cd client && npm install",
+    "client-install": "cd client && npm install",
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "cd client && npm start",
