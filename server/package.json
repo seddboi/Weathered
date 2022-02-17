@@ -10,6 +10,7 @@
     "client": "cd .. && cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+  
   "author": "Gian Z",
   "license": "MIT",
   "dependencies": {
