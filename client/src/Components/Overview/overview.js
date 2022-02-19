@@ -19,7 +19,7 @@ export function Overview() {
 
         const options = {
             method: 'GET',
-            url: 'http://localhost:8000/forecast',
+            url: 'https://weathrd.herokuapp.com/forecast',
             params: {city: searchedCity}
         };
 
