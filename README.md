@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+## Weathered
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![]()
 
-## Available Scripts
+Welcome to Weathered! My first React-based Weather App!
 
-In the project directory, you can run:
+# Introduction
+Weathered is a simple React application that takes in a city and it returns the current + forecasted weather and conditions! From highest temp to chance of rain, this weather app has it all. Using a basic server to host the results from the easy to use API, WeatherAPI, I projected the results in an easy to read format on any device!
 
-### `npm start`
+# Development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+As I am currently still learning how to manipulate React with a backend server, connecting the two sections was a bit intense. Utliizing a static server, I was able to load my Javascript on a singular page with one command. 
+For the frontend, I used React, with simple state variables and slightly more complex Javascript, I was able to organize all of my code onto the page as you see above! The backend is s simple server that hosts a "forecast" page, which posts whatever JSON information is returned from the WeatherAPI. This is when the main component sends a get request amd retrieves said information from the "forecast" page, and applies it to the page!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# How to Install? 
+Its actually not necessary. Just visit the link and you're set!
 
-### `npm test`
+Live Link: https://weathrd.herokuapp.com/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### `npm run build`
+MIT License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Copyright (c) 2021 Gian P Zamora
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### `npm run eject`
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Want to help me out?
+Any Tips, Questions, Concerns, or Comments, you can reach me at zmr.gian@gmail.com
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for Visiting! :)
