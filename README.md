@@ -1,6 +1,6 @@
 ## Weathered
 
-![]()
+![](https://github.com/seddboi/Weathered/blob/main/public/React%20App.gif)
 
 Welcome to Weathered! My first React-based Weather App!
 
