@@ -16,15 +16,16 @@ export function Overview() {
     }; 
 
     async function fetchForecast(searchedCity) {
-
-        const options = {
-            method: 'GET',
-            url: 'https://weathrd.herokuapp.com/forecast',
-            params: {city: searchedCity}
-        };
-
-        axios.request(options).then((response) => {
-            console.log(response.data);
+        
+        await axios.get(
+            'http://api.weatherapi.com/v1/forecast.json',
+            {params: {
+                q: searchedCity,
+                key: process.env.REACT_APP_API_KEY,
+                days: 3
+            }}
+        ).then((response) => {
+            console.log(response);
             setForecast(response.data);
         }).catch((error) => {
             console.log(error);
