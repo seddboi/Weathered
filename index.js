@@ -7,9 +7,13 @@ const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
 
-app.use(express.static('public'));
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', 'https://weatheredd.netlify.app/');
+	next();
+});
+
+app.use(cors());
 
 app.get('/', (req, res) => {
 	res.json('hi');
