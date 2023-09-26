@@ -9,31 +9,33 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 
-app.use(express.static("public"))
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.json('hi');
+	res.json('hi');
 });
 
-app.get('/forecast', (req, res) => {   
-    const options = {
-        method: 'GET',
-        url: `http://api.weatherapi.com/v1/forecast.json?`,
-        params: {
-            q: req.query.city,
-            key : process.env.REACT_APP_API_KEY,
-            days: '3',
-            api: 'no',
-            alerts: 'no',
-        }, 
-    };
+app.get('/forecast', (req, res) => {
+	const options = {
+		method: 'GET',
+		url: `http://api.weatherapi.com/v1/forecast.json?`,
+		params: {
+			q: req.query.q,
+			key: process.env.REACT_APP_API_KEY,
+			days: '3',
+			api: 'no',
+			alerts: 'no',
+		},
+	};
 
-    axios.request(options).then((response) => {
-        res.json(response.data);
-    }).catch((error) => {
-        console.log(error);
-    });
+	axios
+		.request(options)
+		.then((response) => {
+			res.json(response.data);
+		})
+		.catch((error) => {
+			console.log(error);
+		});
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT} `))
- 
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT} `));
