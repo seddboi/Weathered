@@ -83,7 +83,7 @@ export function RecentSearches({ getSearch }) {
 				<input className="form-text" id="search-bar" type="text" value={city} placeholder="Las Vegas, etc." onChange={onChange} />
 				<input className="form-button" id="search-button" type="submit" value="Search" />
 			</form>
-			<p>{error}</p>
+			<p className="text-center">{error}</p>
 		</section>
 	);
 }
